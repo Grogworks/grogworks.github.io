@@ -56,7 +56,8 @@ contact: <strong><a href="mailto:grogworks.apps+recshelf@gmail.com">grogworks.ap
 
 <h2>3. Book search (Google Books and Open Library)</h2>
 <p>When you type a title or an ISBN in the Title field, the app sends <strong>only the search text</strong>
-to one of these services over an encrypted connection (HTTPS):</p>
+to one of these services over an encrypted connection (HTTPS). The same happens when you open in RecShelf a book
+shared from another app: the title is searched right away to find the author and cover.</p>
 <ul>
   <li><strong>Google Books API</strong>, by Google LLC —
       <a href="https://policies.google.com/privacy">Google Privacy Policy</a>;</li>
@@ -66,7 +67,7 @@ to one of these services over an encrypted connection (HTTPS):</p>
 <p>As with any internet connection, these services also receive your IP address and technical request data
 (e.g. app type). We do not send personal identifiers, your lists or your comments. Covers are downloaded
 from the same services. If you prefer not to use search, you can type the details yourself:
-nothing is sent until you type at least three characters in the Title field.</p>
+nothing is sent while the Title field has fewer than three characters.</p>
 
 <h2>4. Amazon links (affiliate)</h2>
 <p>The “Search on Amazon” button opens Amazon (amazon.it, or amazon.fr if your phone is set to France) in your browser
@@ -74,6 +75,10 @@ or the Amazon app with the book's title, author or ISBN. The link may include an
 from qualifying purchases at no extra cost to you, and Amazon may use cookies to attribute the purchase; from then on the
 <a href="https://www.amazon.com/privacy">Amazon Privacy Notice</a> applies. RecShelf receives no information
 about you or your purchases, only aggregated sales reports.</p>
+<p>So that these codes can be updated without updating the app, at most once a day RecShelf downloads a small public
+settings file from <strong>grogworks.github.io</strong>, hosted by GitHub. None of your data is sent: like any web page,
+GitHub only receives the IP address and technical request data
+(<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>).</p>
 
 <h2>5. Sharing</h2>
 <ul>
@@ -89,7 +94,7 @@ about you or your purchases, only aggregated sales reports.</p>
   <li><strong>Statistics and wishlist:</strong> only when you tap “Share”, the app creates an image of your
       statistics or a text with your wishlist and hands it to the app you choose.</li>
   <li><strong>Receiving from other apps:</strong> text or links you share to RecShelf are used only to
-      pre-fill a book on your phone.</li>
+      pre-fill a book on your phone; the title is searched as described in section 3.</li>
 </ul>
 
 <h2>6. Backup</h2>

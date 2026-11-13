@@ -2,5 +2,6 @@
   "amazon": {
     "it": { "tag": "" },
     "fr": { "tag": "" }
-  }
+  },
+  "support": { "enabled": false }
 }

@@ -57,7 +57,8 @@ dell'app sul tuo telefono:</p>
 
 <h2>3. Ricerca dei libri (Google Books e Open Library)</h2>
 <p>Quando scrivi un titolo o un codice ISBN nel campo Titolo, l'app invia <strong>solo il testo della ricerca</strong>
-a uno di questi servizi, tramite connessione cifrata (HTTPS):</p>
+a uno di questi servizi, tramite connessione cifrata (HTTPS). Lo stesso succede quando apri in RecShelf un libro
+condiviso da un'altra app: il titolo viene cercato subito, per trovare autore e copertina.</p>
 <ul>
   <li><strong>Google Books API</strong>, di Google LLC —
       <a href="https://policies.google.com/privacy">informativa privacy di Google</a>;</li>
@@ -67,14 +68,18 @@ a uno di questi servizi, tramite connessione cifrata (HTTPS):</p>
 <p>Come per qualsiasi connessione internet, questi servizi ricevono anche il tuo indirizzo IP e dati tecnici
 della richiesta (es. tipo di app). Non inviamo identificativi personali, i tuoi elenchi o i tuoi commenti.
 Le copertine vengono scaricate dagli stessi servizi. Se non vuoi usare la ricerca, puoi inserire i dati a mano:
-nulla viene inviato finché non scrivi almeno tre caratteri nel campo Titolo.</p>
+nulla viene inviato finché il campo Titolo non contiene almeno tre caratteri.</p>
 
 <h2>4. Link ad Amazon (affiliazione)</h2>
 <p>Il pulsante «Cerca su Amazon» apre Amazon (amazon.it, oppure amazon.fr se il telefono è impostato sulla Francia)
 nel browser o nell'app Amazon, con il titolo, l'autore o l'ISBN del libro. Il link può contenere un codice di affiliazione Amazon: in quel caso, in qualità di Affiliato Amazon,
 lo sviluppatore riceve un guadagno dagli acquisti idonei, senza costi in più per te, e Amazon può usare cookie per attribuire l'acquisto; da quel momento vale
-l'<a href="https://www.amazon.com/privacy">informativa privacy di Amazon</a>. RecShelf non riceve informazioni
+l'<a href="https://www.amazon.it/privacy">informativa privacy di Amazon</a>. RecShelf non riceve informazioni
 su di te o sui tuoi acquisti, solo report aggregati delle vendite.</p>
+<p>Per poter aggiornare questi codici senza aggiornare l'app, al massimo una volta al giorno RecShelf scarica un piccolo
+file di impostazioni pubblico da <strong>grogworks.github.io</strong>, ospitato da GitHub. Non viene inviato nessun dato tuo:
+GitHub riceve solo, come per ogni pagina web, l'indirizzo IP e dati tecnici della richiesta
+(<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">informativa privacy di GitHub</a>).</p>
 
 <h2>5. Condivisione</h2>
 <ul>
@@ -90,7 +95,7 @@ su di te o sui tuoi acquisti, solo report aggregati delle vendite.</p>
   <li><strong>Statistiche e lista desideri:</strong> solo quando tocchi «Condividi», l'app crea un'immagine
       delle statistiche o un testo con la lista desideri e lo passa all'app che scegli tu.</li>
   <li><strong>Ricevere da altre app:</strong> se condividi un testo o un link verso RecShelf,
-      viene usato solo per precompilare la scheda sul tuo telefono.</li>
+      viene usato solo per precompilare la scheda sul tuo telefono; il titolo viene cercato come descritto al punto 3.</li>
 </ul>
 
 <h2>6. Backup</h2>
